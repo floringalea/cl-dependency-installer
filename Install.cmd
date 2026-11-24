@@ -5,7 +5,7 @@ title Software Installer
 
 echo Downloading installation script...
 
-set "SCRIPT_URL=https://github.com/floringalea/cl-dependency-installer/main/Install.ps1"
+set "SCRIPT_URL=https://raw.githubusercontent.com/floringalea/cl-dependency-installer/main/Install.ps1"
 set "SCRIPT_FILE=%TEMP%\CompanyInstall-%RANDOM%.ps1"
 
 powershell.exe -NoProfile -Command "Invoke-WebRequest -Uri '%SCRIPT_URL%' -OutFile '%SCRIPT_FILE%' -ErrorAction Stop"
